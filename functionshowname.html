@@ -6,25 +6,22 @@
     <title>Document</title>
 
     <script>
-        function f(fn) {
-            return fn;
-        }
+        
 
-        function l(ln) {
-            return ln;
-        }
-
-        function showName() {
-            let firstname = f("Krishna");
-            let lastname = l("Maheshwari");
-
-            document.write("First Name: " + firstname + " " + lastname);
-        }
-    </script>
+        function display(){
+            let n=parseInt(prompt("enter the value of n"));
+            for(let i=0;i<n;i++)
+        {
+            for(let j=0;j<=i;j++)
+            {document.write("*");
+            }
+            document.write("<br>");
+        }        }
+        </script>
 </head>
 <body>
 
-    <input type="button" value="Result" onclick="showName()">
+    <input type="button" value="Result" onclick="display()">
 
     <p id="result"></p>
 
