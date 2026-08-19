@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name ="registration" onsubmit="validate()">
+        <h2>Registration Form</h2>
+        Name:
+        <input type="text" name="uname">
+        <br> <br>
+        Email:
+        <input type="text"name="email">
+        <br><br>
+        Password:
+        <input type="password" name="pass">
+        <br> <br>   
+        confirm Password:
+        <input type="password" name="cpass">
+        <br>  <br>  
+        Mobile:
+        <input type="text" name="mobile">
+        <br>
+        <input type="submit" value="Register">
+
+    </form>
+    <script>
+function validate(){
+var n=document.registration.uname.value;
+if(n==""&& !isNaN(n)){
+    alert("enter name");
+    return false;
+}
+var e=document.registration.email.value;
+at=e.indexOf("@");
+dot=e.lastIndexOf(".");
+if(dot-at<3||!isNaN(e)){
+    alert("enter valid email");
+    return false;
+}
+var p=document.registration.pass.value;
+if(p=="")
+{
+    alert("enter password");
+    return false;
+}
+var cp=document.registration.cpass.value;
+if(cp=="" || (p!=cp))
+{
+    alert("enter confirm password");
+    return false;
+
+}
+var m=document.registration.mobile.value;
+if(m.length!=10 || m=="" || isNaN(m))
+{
+alert("enter valid mobile number");
+return false;
+}
+alert("registration successful");
+return true;
+} </script>
+</body>
+</html>
