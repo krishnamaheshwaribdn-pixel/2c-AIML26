@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Star Pattern</title>
+</head>
+
+<body>
+
+<script>
+
+var n = 5;
+
+for(var i = 1; i <= n; i++)
+{
+    var s = "";
+
+  
+    for(var j = 1; j <= n - i; j++)
+    {
+        s = s + " ";
+    }
+
+    
+    for(var j = 1; j <= i; j++)
+    {
+        s = s + "*";
+    }
+
+    document.write(s + "<br>");
+}
+
+</script>
+
+</body>
+</html>
