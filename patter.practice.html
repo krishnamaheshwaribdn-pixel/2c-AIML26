@@ -4,27 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+</head>
+<body>
     <script>
-        
-
-        function display(){
-            let n=parseInt(prompt("enter the value of n"));
-            for(let i=0;i<n;i++)
+        function pattern(){
+        let n=parseInt(prompt("eneter"));
+        for(let i=0;i<n;i++)
         {
             for(let j=0;j<=i;j++)
             {document.write("*");
             }
             document.write("<br>");
         }       
-     }
+    }
         </script>
-</head>
-<body>
-
-    <input type="button" value="Result" onclick="display()">
-
-    
+        <button type="button" value="Result" onclick="pattern()">Result</button>
 
 </body>
 </html>
