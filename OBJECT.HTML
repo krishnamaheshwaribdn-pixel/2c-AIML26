@@ -17,6 +17,30 @@ console.log("learning javascript");
 };
 console.log(student.name);
 student.learning();
+
+//second way to create object
+let student1={
+    name:"krishna",
+    id:098,
+    city:"ghaziabad",
+    learning:function(){
+        console.log("learning javascript");
+    }
+};
+console.log(student1.name);
+student1.learning();        
+
+//object constructor
+function Student(name,id,city){
+    this.name=name;
+    this.id=id;
+    this.city=city;
+}
+let st1=new Student("krishna",098,"ghaziabad");
+let st2=new Student("krishna",098,"ghaziabad");
+console.log(st1.name);
+console.log(st2.name);
+
 </script>
 </body>
 </html>
