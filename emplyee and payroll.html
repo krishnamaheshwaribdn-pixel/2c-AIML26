@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payroll System</title>
+</head>
+<body>
+    <script>
+        class employee {
+            static totalemployee = 0;
+
+            constructor(name, salary, id) {
+                this.name = name;
+                this.salary = salary;
+                this.id = id;
+                employee.totalemployee++;
+            }
+
+            calculateSalary() {
+                return this.salary;
+            }
+
+            displaysalary() {
+                document.write(
+                    "Name: " + this.name + "<br>" +
+                    "ID: " + this.id + "<br>" +
+                    "Salary: " + this.calculateSalary() + "<br><br>"
+                );
+            }
+        }
+
+        class demo extends employee {
+            constructor(name, salary, id, incentive) {
+                super(name, salary, id);
+                this.incentive = incentive;
+            }
+
+            calculateSalary() {
+                return this.salary + this.incentive;
+            }
+
+            static displaysalary() {
+                document.write("Total employees are: " + employee.totalemployee + "<br>");
+            }
+        }
+
+        let emp1 = new employee("Krishna", 10000, 1);
+        let emp2 = new demo("Naitik", 20000, 2, 5000);
+
+        emp1.displaysalary();
+        emp2.displaysalary();
+
+        demo.displaysalary();
+    </script>
+</body>
+</html>
