@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student management system</title>
+</head>
+<body>
+    <script>
+        
+        class Student {
+            static totalStudents = 0;
+
+            constructor(name, marks, rollno) {
+                this.name = name;
+                this.marks = marks;
+                this.rollno = rollno;
+                Student.totalStudents++;
+            }
+
+            displayresult() {
+                document.write(this.name + "<br>",  this.rollno +"<br>", this.marks);
+                if (this.marks >= 30) {
+                    document.write("pass");
+                } else {
+                    document.write("fail");
+                }
+                document.write("<br>");
+            }
+            static displayresult(){
+                document.write("total students are: " , Student.totalStudents);
+            }
+
+        }
+        let student1 = new Student("krishna", 90, 1);
+        let student2 = new Student("naitik", 20, 2);
+        student1.displayresult();   
+        student2.displayresult();
+
+
+    </script>
+</body>
+</html>
