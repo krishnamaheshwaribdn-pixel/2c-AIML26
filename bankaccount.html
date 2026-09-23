@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dbankaccount</title>
+</head>
+<body>
+
+<script>
+    class Bank {
+        static totalaccount = 0;
+
+        constructor(bankname, name, accountno, balance) {
+            this.bankname = bankname;
+            this.name = name;
+            this.accountno = accountno;
+            this.balance = balance;
+            Bank.totalaccount++;
+        }
+
+        displayaccount() {
+            document.write(this.bankname + "<br>");
+            document.write(this.name + "<br>");
+            document.write(this.accountno + "<br>");
+            document.write(this.balance + "<br><br>");
+        }
+
+        withdraw(amount) {
+            if (amount <= this.balance) {
+                this.balance -= amount;
+                document.write("Withdrawal successful.<br>");
+            } else {
+                document.write("Insufficient balance.<br>");
+            }
+        }
+
+        static displayaccount() {
+            document.write("Total accounts are: " + Bank.totalaccount);
+        }
+    }
+
+    let account1 = new Bank("ABES", "Krishna", 12345, 1000);
+    let account2 = new Bank("ABES", "Naitik", 67890, 500);
+
+    account1.displayaccount();
+    account2.displayaccount();
+
+    account1.withdraw(200);
+    account2.withdraw(600);
+
+    Bank.displayaccount();
+</script>
+
+</body>
+</html>
