@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Flipkart-inspired shopping page built with HTML and CSS.">
+    <title>Flipkart Clone | Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a class="brand" href="#" aria-label="Flipkart Clone home">
+                <span class="brand-name">Flipkart</span>
+                <span class="brand-caption">Explore <strong>Plus</strong></span>
+            </a>
+
+            <form class="search" role="search">
+                <label class="sr-only" for="site-search">Search for products</label>
+                <input id="site-search" type="search" placeholder="Search for products, brands and more">
+                <button type="submit" aria-label="Search">⌕</button>
+            </form>
+
+            <nav class="header-actions" aria-label="Account and shopping">
+                <a class="login-button" href="#">Login</a>
+                <a href="#">Become a Seller</a>
+                <a href="#">More <span aria-hidden="true">⌄</span></a>
+                <a href="#"><span aria-hidden="true">🛒</span> Cart</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="categories" aria-label="Shopping categories">
+            <a href="#"><span class="category-icon">#</span>Minutes</a>
+            <a href="#"><span class="category-icon">#</span>Mobiles</a>
+            <a href="#"><span class="category-icon">#</span>Fashion</a>
+            <a href="#"><span class="category-icon">#</span>Electronics</a>
+            <a href="#"><span class="category-icon">#</span>Home</a>
+            <a href="#"><span class="category-icon">#</span>Appliances</a>
+            <a href="#"><span class="category-icon">#</span>Travel</a>
+            <a href="#"><span class="category-icon">#</span>Beauty, Toys &amp; More</a>
+        </section>
+
+        <section class="hero" aria-label="Featured offer">
+            <div class="hero-copy">
+                <p class="eyebrow">The Big Shopping Days</p>
+                <h1>Big deals. Bigger smiles.</h1>
+                <p>Discover exciting offers across your favourite categories.</p>
+                <a class="shop-button" href="#top-deals">Shop now <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="hero-placeholder" aria-label="Banner image placeholder">#</div>
+        </section>
+
+        <section class="deals-section" id="top-deals">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Picked for you</p>
+                    <h2>Top deals for today</h2>
+                </div>
+                <a class="view-all" href="#">View all <span aria-hidden="true">→</span></a>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <a href="#" class="product-link">
+                        <div class="product-placeholder" aria-label="Product image placeholder">#</div>
+                        <h3>Wireless Headphones</h3>
+                        <p class="offer">Up to 60% off</p>
+                        <p class="product-note">Top-rated audio</p>
+                    </a>
+                </article>
+                <article class="product-card">
+                    <a href="#" class="product-link">
+                        <div class="product-placeholder" aria-label="Product image placeholder">#</div>
+                        <h3>Smart Watches</h3>
+                        <p class="offer">From ₹1,499</p>
+                        <p class="product-note">Stay connected</p>
+                    </a>
+                </article>
+                <article class="product-card">
+                    <a href="#" class="product-link">
+                        <div class="product-placeholder" aria-label="Product image placeholder">#</div>
+                        <h3>Everyday Backpacks</h3>
+                        <p class="offer">Up to 70% off</p>
+                        <p class="product-note">Style meets comfort</p>
+                    </a>
+                </article>
+                <article class="product-card">
+                    <a href="#" class="product-link">
+                        <div class="product-placeholder" aria-label="Product image placeholder">#</div>
+                        <h3>Running Shoes</h3>
+                        <p class="offer">From ₹899</p>
+                        <p class="product-note">Made for every move</p>
+                    </a>
+                </article>
+                <article class="product-card">
+                    <a href="#" class="product-link">
+                        <div class="product-placeholder" aria-label="Product image placeholder">#</div>
+                        <h3>Home Essentials</h3>
+                        <p class="offer">Up to 50% off</p>
+                        <p class="product-note">Refresh your space</p>
+                    </a>
+                </article>
+                <article class="product-card">
+                    <a href="#" class="product-link">
+                        <div class="product-placeholder" aria-label="Product image placeholder">#</div>
+                        <h3>Bluetooth Speakers</h3>
+                        <p class="offer">From ₹799</p>
+                        <p class="product-note">Big sound, anywhere</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Flipkart Clone</p>
+        <p>A simple shopping page made with HTML and CSS.</p>
+    </footer>
+</body>
+</html>
